@@ -1,0 +1,56 @@
+@import "style.css";
+
+/*
+Main
+*/
+main {
+    display: flex;
+}
+
+main section {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 20px;
+    row-gap: 40px;
+    margin: 25px;
+}
+main section article {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background-color: #FCFAFF;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px 4px #D3D3D3;
+}
+
+main section article img {
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #D3D3D3;
+}
+
+main section article h5 {
+    margin-left: 20px;
+}
+
+main section article p {
+    font-size: small;
+    margin: 20px;
+}
+
+main aside {
+    max-width: 300px;
+    min-width: 150px;
+    background-color: #FCFAF9;
+    border-left: solid 1px;
+    border-color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-row {
+    margin-left: 10px;
+} 
+

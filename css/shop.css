@@ -26,6 +26,9 @@ main section article {
 }
 
 main section article img {
+    object-fit: contain;
+    height: 300px;
+    width: 200px;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 1px 1px #D3D3D3;
@@ -53,4 +56,3 @@ main aside {
 .aside-row {
     margin-left: 10px;
 } 
-

@@ -14,7 +14,8 @@ main section {
     justify-content: space-evenly;
     column-gap: 20px;
     row-gap: 40px;
-    margin: 25px;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
 }
 main section article {
     display: flex;
@@ -35,8 +36,6 @@ main section article img {
     box-shadow: 1px 1px 1px 1px #D3D3D3;
 }
 
-
-
 main section article p {
     font-size: small;
     margin: 20px;
@@ -45,11 +44,11 @@ main section article p {
 main aside {
     max-width: 300px;
     min-width: 150px;
-    background-color: #FCFAF9;
-    border-left: solid 1px;
     border-color: #333;
     display: flex;
     flex-direction: column;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
 }
 
 .aside-row {

@@ -41,16 +41,38 @@ main section article p {
     margin: 20px;
 }
 
+/*
+NavBar
+*/
+.menuButton {
+    width: 50px;
+    display: flex; 
+    justify-content: center;
+}
+
+/*
+SideBar
+*/
 main aside {
     max-width: 300px;
     min-width: 150px;
     border-color: #333;
-    display: flex;
-    flex-direction: column;
     height: calc(100vh - 100px);
+    background-color: whitesmoke;
     overflow-y: scroll;
 }
 
 .aside-row {
     margin-left: 10px;
 } 
+
+.hide {
+    display: none;
+}
+
+.show-sidebar {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+}

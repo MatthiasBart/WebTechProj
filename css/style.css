@@ -70,10 +70,22 @@ Footer
 */
 footer {
     height: 50px;
-    width: 100%;
+    width: 100vw;
     background-color: #5E5E5E;
 }
 
 .footer-container {
     
+}
+
+#imprint {
+    width: 100%;
+    text-align: center;
+    padding-top: 4vh;
+}
+
+#imprint em {
+    display: block;
+    padding-bottom: 5px;
+    font-weight: 600;
 }

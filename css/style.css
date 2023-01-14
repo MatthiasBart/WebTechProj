@@ -63,7 +63,30 @@ nav li:hover {
 
 nav li:hover #sub_nav {
     display: flex;
+
 }
+
+main {
+    padding-top: 2%;
+
+
+
+}
+
+#mapcontainer {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height:auto;
+}
+
+@media screen and (max-width: 800px) {
+    #mapcontainer {
+        width: 100%;
+    }
+
+}
+
 
 /*
 Footer

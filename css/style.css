@@ -27,6 +27,10 @@ header h1 {
 /*
 Navigation Bar
 */
+
+nav {
+    z-index: 999;
+}
 nav ul {
     padding: 0;
     background-color: #333;
@@ -68,6 +72,17 @@ nav li:hover #sub_nav {
     display: flex;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.sticky + * {
+    margin-top: 50px;
+}
+
 #shop {
     padding-top: 3vh;
 }
@@ -82,6 +97,9 @@ main {
 Footer
 */
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 50px;
     width: 100vw;
     background-color: #5E5E5E;
@@ -90,6 +108,7 @@ footer {
 .footer-container {
     
 }
+
 
 #imprint {
     width: 100%;

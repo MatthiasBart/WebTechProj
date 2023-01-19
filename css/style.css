@@ -24,6 +24,15 @@ header h1 {
     color: #000;
 }
 
+header #mail {
+    margin-left: auto;
+    color: #bb5a1d;
+    
+}
+
+header #mail, #phone {
+    padding-right: 20px;
+}
 /*
 Navigation Bar
 */
@@ -45,16 +54,21 @@ nav li {
 }
 
 nav li a {
+    font-size: 1.2em;
     line-height: 50px;
     cursor: pointer;
     padding-inline: 20px;
     display: flex;
     text-decoration: none;
-    color: #FCFAF9;
+    color: #bb5a1d;
 }
 
 nav li:hover {
     background-color: #5E5E5E;
+}
+
+nav li:hover > a {
+    color: #FFF;
 }
 
 

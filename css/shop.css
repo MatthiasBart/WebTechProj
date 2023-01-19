@@ -61,6 +61,7 @@ main section article li {
 }
 
 .category {
+    color: #bb5a1d;
     display: block;
     text-align: center;
     text-decoration: overline underline;
@@ -69,6 +70,7 @@ main section article li {
 
 .specs li i {
     padding-right: 10px;
+    color: #bb5a1d;
 }
 
 .specs li {
@@ -84,7 +86,7 @@ ul.specs {
 
 .price {
     align-self: flex-end;
-    color: rgb(181, 0, 0);
+    color: #bb5a1d;
     margin-top: -60px;
     padding-bottom: 30px;
     font-weight: 600;
@@ -114,11 +116,25 @@ article:hover {
 /*
 NavBar
 */
-.menuButton {
-    width: 50px;
+#menuButton {
+    height: 50px;
+    margin-left: auto;
     display: flex; 
     justify-content: center;
+    cursor: pointer;
 }
+
+#menuButton i {
+    color: #bb5a1d;
+}
+
+#menuButton i.fa-circle {
+    font-size: 1em;
+}
+#menuButton i.fa-bars {
+    font-size: 0.5em;
+}
+
 
 /*
 SideBar
@@ -135,7 +151,7 @@ main aside {
     margin-left: 10px;
 } 
 
-.hide {
+#menuButton.hide, .hide {
     display: none;
 }
 

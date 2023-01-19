@@ -5,6 +5,7 @@ Main
 */
 main {
     display: flex;
+    background-color: #FFF;
 }
 
 main section {
@@ -14,31 +15,94 @@ main section {
     justify-content: space-evenly;
     column-gap: 20px;
     row-gap: 40px;
-    height: calc(100vh - 100px);
     overflow-y: scroll;
+    
 }
 main section article {
     display: flex;
     flex-direction: column;
+    height: auto;
     align-items: center;
-    width: 350px;
-    background-color: #FCFAFF;
+    min-width: 350px;
+    padding: 20px;
+    background-color: #DDD;
     border-radius: 15px;
-    box-shadow: 4px 4px 4px 4px #D3D3D3;
+    box-shadow: 4px 4px 4px 4px #333;
+    cursor: pointer;
+}
+
+article h3 {
+    text-align: center;
 }
 
 main section article img {
     object-fit: contain;
     height: 300px;
-    width: 200px;
-    margin: 10px;
+    width: 150px;
+    background-color: #FFF;
+    padding: 20px;
+    margin: -70px 0;
     border-radius: 10px;
-    box-shadow: 1px 1px 1px 1px #D3D3D3;
+    box-shadow: 2px 2px 5px 1px #6d6d6d;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
 }
 
-main section article p {
-    font-size: small;
-    margin: 20px;
+main section article li {
+    font-size: medium;
+    line-height: 1.5;
+    list-style-type: none;
+    margin: 0;
+	padding-left: 40px;
+	list-style: none;
+}
+
+.category {
+    display: block;
+    text-align: center;
+    text-decoration: overline underline;
+    text-transform: uppercase;
+}
+
+.specs li i {
+    padding-right: 10px;
+}
+
+.specs li {
+    line-height: 1.5;
+    padding: 0;
+}
+
+ul.specs {
+    align-self: flex-start;
+    margin: 20px 0 20px 0;
+    padding: 0;
+}
+
+.price {
+    align-self: flex-end;
+    color: rgb(181, 0, 0);
+    margin-top: -50px;
+    padding-bottom: 30px;
+    font-weight: 600;
+    font-size: xx-large;
+    text-decoration: underline;
+    transform: rotate(-10deg);
+}
+
+article {
+    
+    transition: transform ease 0.2s;
+    -webkit-transition: transform ease 0.2s;
+    -o-transition: transform ease 0.2s;
+    -moz-transition: transform ease 0.2s;
+}
+
+article:hover {
+    transform: scale(105%);
+    transition: transform ease 0.2s;
 }
 
 /*
@@ -57,7 +121,6 @@ main aside {
     max-width: 300px;
     min-width: 150px;
     border-color: #333;
-    height: calc(100vh - 100px);
     background-color: whitesmoke;
     overflow-y: scroll;
 }

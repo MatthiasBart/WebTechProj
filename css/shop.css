@@ -23,7 +23,7 @@ main section article {
     flex-direction: column;
     height: auto;
     align-items: center;
-    min-width: 350px;
+    width: 350px;
     padding: 20px;
     background-color: #DDD;
     border-radius: 15px;

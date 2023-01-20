@@ -9,7 +9,7 @@ body {
 Header Bar
 */
 header, header a {
-    height: 50px;
+    
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -20,19 +20,38 @@ header img {
 }
 
 header h1 {
+    margin: 0;
     font-size: 2em;
     color: #000;
+    min-width: max-content;
 }
 
-header #mail {
-    margin-left: auto;
-    color: #bb5a1d;
+.spacer {
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+
+
+#header_contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#mail, #phone {
     
+    padding-right: 20px;
+    font-size: 100%;
+    min-width: max-content;
+}
+#mail {
+    color: #bb5a1d;
 }
 
-header #mail, #phone {
-    padding-right: 20px;
-}
+
 /*
 Navigation Bar
 */
@@ -112,13 +131,19 @@ Footer
 */
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 50px;
     width: 100vw;
     background-color: #5E5E5E;
-}
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #DDD;
+    }
 
+#copyright {
+    white-space: nowrap;
+}
 
 
 

@@ -78,6 +78,7 @@ main {
     margin: auto;
     width: 50%;
     height:auto;
+    text-align: center;
 }
 
 @media screen and (max-width: 800px) {

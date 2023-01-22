@@ -106,13 +106,6 @@ nav li:hover #sub_nav {
 
 }
 
-main {
-    padding-top: 2%;
-
-
-
-}
-
 #mapcontainer {
     display: block;
     margin: auto;
@@ -125,7 +118,6 @@ main {
     #mapcontainer {
         width: 100%;
     }
-
 }
 
 .sticky {
@@ -148,8 +140,6 @@ main {
     flex-direction: column;
     flex-grow: 1;
 }
-
-
 /*
 Footer
 */

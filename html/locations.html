@@ -5,8 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>bcd guitar shop - location</title>
         <link rel="stylesheet" href="../css/style.css" type="text/css">
-        
-        <script src="js/main.js"></script>
     </head>
     <body>
         <header>
@@ -21,16 +19,21 @@
             </div>
         </header>
         <nav>
-            <ul>
-                <li><a href="../index.html">news</a></li>
-                <li><a href="shop.html">shop</a></li>
-                <li style="color: #FFF" class="menu_item">contact
+            <div id="menuButton" class="menuButton fa-stack fa-2x">
+                <i class="fa-regular fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-bars fa-stack-1x"></i>
+            </div>
+            <ul id="menuLinkContainer">
+                <li class="menuLink"><a href="../index.html">news</a></li>
+                <li class="menuLink"><a href="shop.html">shop</a></li>
+                <li style="color: #FFF" class="menuLink menu_item">contact
                     <ul id="sub_nav">
-                        <li><a style="color: #FFF" href="locations.html">where to find us</a></li>
-                        <li><a href="imprint.html">imprint</a></li>
+                        <li class="menuLink"><a style="color: #FFF" href="locations.html">where to find us</a></li>
+                        <li class="menuLink"><a href="imprint.html">imprint</a></li>
                     </ul>
                 </li>
             </ul>
+            <div class="spacer"></div>
         </nav>
         <main>
             <section>
@@ -41,7 +44,7 @@
                     <p>Sunday: Closed</p>
                 </div>
                 <div id="mapcontainer">
-                    <iframe height="300" src="https://maps.google.de/maps?hl=de&q=%20Werk-VI-Straße+46%20Kapfenberg&t=&z=10&ie=utf8&iwloc=b&output=embed" frameborder="0" scrolling="no" style='height:300px;width:100%;'> 
+                    <iframe height="300" src="https://maps.google.de/maps?hl=de&q=%20Werk-VI-Straße+46%20Kapfenberg&t=&z=10&ie=utf8&iwloc=b&output=embed" style='height:300px;width:100%;'> 
                     </iframe>
                     <p id="location_home_link"> 
                         von 
@@ -57,5 +60,6 @@
                 &copy; 2023
             </div>
         </footer>
+        <script src="../js/main.js"></script>
     </body>
 </html>

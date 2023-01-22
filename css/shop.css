@@ -1,5 +1,4 @@
 @import "style.css";
-@import url("https://use.fontawesome.com/releases/v6.2.1/css/all.css");
 
 /*
 Main
@@ -146,35 +145,4 @@ NavBar
     height: 20px;
     padding-inline: 5px;
     font-size: 0.6em;
-}
-
-#menuButton {
-    height: 50px;
-    margin-left: auto;
-    display: flex; 
-    justify-content: center;
-    cursor: pointer;
-}
-
-#menuButton i {
-    color: #bb5a1d;
-}
-
-#menuButton i.fa-circle {
-    font-size: 1em;
-}
-#menuButton i.fa-bars {
-    font-size: 0.5em;
-}
-
-
-#menuButton.hide, .hide {
-    display: none;
-}
-
-.show-sidebar {
-    display: block;
-    position: absolute;
-    z-index: 1;
-    right: 0;
 }

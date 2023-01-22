@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round");
+@import url("https://use.fontawesome.com/releases/v6.2.1/css/all.css");
 
 :root {
     font-size: 16px;
@@ -60,10 +61,17 @@ header h1 {
 /*
 Navigation Bar
 */
-
+#suche {
+    padding-top: 15px;
+}
 nav {
     z-index: 999;
+    padding: 0;
+    background-color: #333;
+    display: flex;
+    margin: 0px;
 }
+
 nav ul {
     padding: 0;
     background-color: #333;
@@ -71,7 +79,8 @@ nav ul {
     list-style: none;
     margin: 0px;
 }
-nav li {
+
+nav li, #menuButton {
     position: relative;
     display: flex;
     align-items: center;
@@ -90,7 +99,11 @@ nav li a, .menu_item {
     cursor: default;
 }
 
-nav li:hover {
+.menu_item {
+    cursor: default;
+}
+
+nav li:hover, #menuButton:hover {
     background-color: #5E5E5E;
 }
 
@@ -109,7 +122,6 @@ nav li:hover > a, nav li:hover > .menu_item {
 
 nav li:hover #sub_nav {
     display: flex;
-
 }
 
 #mapcontainer, #opening_times {
@@ -119,8 +131,6 @@ nav li:hover #sub_nav {
     height:auto;
     text-align: center;
 }
-
-
 
 @media screen and (max-width: 800px) {
     #mapcontainer {
@@ -233,5 +243,49 @@ footer * {
 }
 
 #location_home_link a {
-    font-size:10px;
+    font-size: 10px;
+}
+/* 
+MenuButton
+*/
+
+#menuButton {
+    height: 50px;
+    margin-left: auto;
+    display: flex; 
+    justify-content: center;
+    cursor: pointer;
+}
+
+#menuButton i {
+    color: #bb5a1d;
+}
+
+#menuButton i.fa-circle {
+    font-size: 1em;
+}
+#menuButton i.fa-bars {
+    font-size: 0.5em;
+}
+#menuButton.hide, .hide {
+    display: none;
+}
+
+.smallMode {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 50px;
+    z-index: 1000;
+    width: 100%;
+}
+
+.smallMode > * {
+    background-color: #333;
+}
+
+.smallMode #sub_nav {
+    display: flex;
+    top: 0;
+    width: 100%;
 }

@@ -5,8 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>bcd guitar shop</title>
         <link rel="stylesheet" href="css/style.css" type="text/css">
-        
-        <script src="js/main.js"></script>
     </head>
     <body>
         <header>
@@ -21,16 +19,21 @@
             </div>
         </header>
         <nav>
-            <ul>
-                <li><a style="color: #FFF" href="html/index.html">news</a></li>
-                <li><a href="html/shop.html">shop</a></li>
-                <li class="menu_item">contact
+            <div id="menuButton" class="menuButton fa-stack fa-2x">
+                <i class="fa-regular fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-bars fa-stack-1x"></i>
+            </div>
+            <ul id="menuLinkContainer">
+                <li class="menuLink"><a style="color: #FFF" href="">news</a></li>
+                <li class="menuLink"><a href="html/shop.html">shop</a></li>
+                <li class="menuLink menu_item">contact
                     <ul id="sub_nav">
-                        <li><a href="html/locations.html">where to find us</a></li>
-                        <li><a href="html/imprint.html">imprint</a></li>
+                        <li class="menuLink"><a  href="html/locations.html">where to find us</a></li>
+                        <li class="menuLink"><a href="html/imprint.html">imprint</a></li>
                     </ul>
                 </li>
             </ul>
+            <div class="spacer"></div>
         </nav>
         <main>
             <section>
@@ -55,5 +58,6 @@
                 &copy; 2023
             </div>
         </footer>
+        <script src="js/main.js"></script>
     </body>
 </html>

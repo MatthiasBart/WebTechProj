@@ -28,7 +28,7 @@ const resize = () => {
             link.classList.remove("hide");
         }
     }
-    if (window.innerWidth <= 450) {
+    if (window.innerWidth <= 500) {
         if(header_contact.parentNode == header) {
             footer.appendChild(header.removeChild(header_contact));
         }

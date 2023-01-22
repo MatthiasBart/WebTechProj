@@ -116,6 +116,38 @@ article:hover {
 /*
 NavBar
 */
+
+
+#suche {
+    margin-left: auto;
+    padding-inline: 20px;
+    white-space: nowrap;
+}
+
+#suche form {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 5px;
+}
+
+#suche form input[type=text] {
+    color: #999;
+}
+
+#suche:hover {
+    background-color: #333;
+}
+
+#submit_search {
+    background-color: #8e4416;
+    border: 2px outset #bb5a1d;
+    color: #bb5a1d;
+    height: 20px;
+    padding-inline: 5px;
+    font-size: 0.6em;
+}
+
 #menuButton {
     height: 50px;
     margin-left: auto;

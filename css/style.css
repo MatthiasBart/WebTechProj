@@ -42,7 +42,6 @@ header h1 {
 }
 
 #mail, #phone {
-    
     padding-right: 20px;
     font-size: 100%;
     min-width: max-content;
@@ -89,8 +88,6 @@ nav li:hover {
 nav li:hover > a {
     color: #FFF;
 }
-
-
 
 #sub_nav {
     position: absolute;
@@ -158,8 +155,6 @@ footer {
 #copyright {
     white-space: nowrap;
 }
-
-
 
 #imprint {
     width: 100%;

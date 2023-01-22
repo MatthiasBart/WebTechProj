@@ -1,4 +1,5 @@
 @import "style.css";
+@import url("https://use.fontawesome.com/releases/v6.2.1/css/all.css");
 
 /*
 Main
@@ -6,6 +7,10 @@ Main
 main {
     display: flex;
     background-color: #FFF;
+}
+
+#shop {
+    padding-bottom: 20px;
 }
 
 main section {
@@ -37,17 +42,11 @@ article h3 {
 
 main section article img {
     object-fit: contain;
-    height: 20em;
-    width: 150px;
+    width: 90%;
     background-color: #FFF;
     padding: 20px;
-    margin: -70px 0;
     border-radius: 10px;
     box-shadow: 2px 2px 5px 1px #6d6d6d;
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
     z-index: 1;
 }
 
@@ -66,6 +65,7 @@ main section article li {
     text-align: center;
     text-decoration: overline underline;
     text-transform: uppercase;
+    padding-top: 10px;
 }
 
 .specs li i {
@@ -87,7 +87,7 @@ ul.specs {
 .price {
     align-self: flex-end;
     color: #bb5a1d;
-    margin-top: -60px;
+    margin-top: -40px;
     padding-bottom: 30px;
     font-weight: 600;
     font-size: xx-large;
@@ -167,21 +167,6 @@ NavBar
     font-size: 0.5em;
 }
 
-
-/*
-SideBar
-*/
-main aside {
-    max-width: 300px;
-    min-width: 150px;
-    border-color: #333;
-    background-color: whitesmoke;
-    overflow-y: scroll;
-}
-
-.aside-row {
-    margin-left: 10px;
-} 
 
 #menuButton.hide, .hide {
     display: none;

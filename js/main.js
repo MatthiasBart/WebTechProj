@@ -1,5 +1,4 @@
 const nav = document.getElementsByTagName("nav")[0];
-const sideBar = document.getElementById("sideBar");
 const menuButton = document.getElementById("menuButton");
 const header = document.getElementsByTagName("header")[0];
 const footer = document.getElementsByTagName("footer")[0];
@@ -17,11 +16,8 @@ function make_sticky() {
 
 const resize = () => {
     if (window.innerWidth <= 800) {
-        sideBar.classList.add("hide");
         menuButton.classList.remove("hide");
     } else {
-        sideBar.classList.remove("show-sidebar");
-        sideBar.classList.remove("hide");
         menuButton.classList.add("hide");
     }
     if (window.innerWidth <= 450) {
@@ -37,7 +33,7 @@ const resize = () => {
 }
 
 menuButton.addEventListener("click", () => {
-    sideBar.classList.toggle("show-sidebar");
+    return;
 })
 // to update when loaded
 resize();

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>guitar shop - location</title>
         <link rel="stylesheet" href="../css/style.css" type="text/css">
+        
         <script src="js/main.js"></script>
     </head>
     <body>
@@ -13,14 +14,19 @@
                 <img id="main_logo" alt="guitar shop logo" src="../img/guitar_logo.webp">
                 <h1>guitar shop</h1>
             </a>
+            <div class="spacer"></div>
+            <div id="header_contact">
+                <a id="mail" href="mailto:info@guitar-shop.at">info@guitar-shop.at</a>
+                <span id="phone">+43 665 12 345 67</span>
+            </div>
         </header>
         <nav>
             <ul>
-                <li><a href="showcase.html">showcase</a></li>
+                <li><a href="../index.html">news</a></li>
                 <li><a href="shop.html">shop</a></li>
-                <li><a href="">contact</a>
+                <li style="color: #FFF" class="menu_item">contact
                     <ul id="sub_nav">
-                        <li><a href="locations.html">where to find us</a></li>
+                        <li><a style="color: #FFF" href="locations.html">where to find us</a></li>
                         <li><a href="imprint.html">imprint</a></li>
                     </ul>
                 </li>
@@ -28,31 +34,28 @@
         </nav>
         <main>
             <section>
-                <div id="mapcontainer" >
+                <div id="opening_times" >
                     <h2>Opening Times</h2>
                     <p>Monday-Friday: 9:00-18:00</p>
                     <p>Saturday: 9:00-12:00</p>
                     <p>Sunday: Closed</p>
                 </div>
-                                
-
-                    <div id="mapcontainer">
-                        <iframe width="" height="300" src="https://maps.google.de/maps?hl=de&q=%20Werk-VI-Straße+46%20Kapfenberg&t=&z=10&ie=utf8&iwloc=b&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style='height:300px;width:100%;'> 
-                            
-                        </iframe>
-                        <p style="text-align:right; margin:0px; padding-top:-10px; line-height:10px;font-size:10px;margin-top: -25px;"> 
-                            von 
-                            <a href="../index.html"  style="font-size:10px;" title="location" target="_blank">
-                                Guitar Shop
-                            </a>
-                        </p>
-                    </div>
-                    <footer>
-                        <div class="footer-container">
-                            &copy; 2023 Deutsch, Bartholomäus, Czak
-                        </div>
-                    </footer>
-        </section>
-    </main>
-</body>
+                <div id="mapcontainer">
+                    <iframe height="300" src="https://maps.google.de/maps?hl=de&q=%20Werk-VI-Straße+46%20Kapfenberg&t=&z=10&ie=utf8&iwloc=b&output=embed" frameborder="0" scrolling="no" style='height:300px;width:100%;'> 
+                    </iframe>
+                    <p id="location_home_link"> 
+                        von 
+                        <a href="../index.html"  title="location" target="_blank">
+                            Guitar Shop
+                        </a>
+                    </p>
+                </div> 
+            </section>
+        </main>
+        <footer>
+            <div class="footer-container">
+                &copy; 2023
+            </div>
+        </footer>
+    </body>
 </html>

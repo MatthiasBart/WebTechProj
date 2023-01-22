@@ -103,6 +103,29 @@ nav li:hover > a {
 
 nav li:hover #sub_nav {
     display: flex;
+
+}
+
+main {
+    padding-top: 2%;
+
+
+
+}
+
+#mapcontainer {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height:auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    #mapcontainer {
+        width: 100%;
+    }
+
 }
 
 .sticky {
@@ -125,6 +148,7 @@ main {
     flex-direction: column;
     flex-grow: 1;
 }
+
 
 /*
 Footer

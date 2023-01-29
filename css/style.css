@@ -245,6 +245,10 @@ footer * {
     flex-grow: 1;
 }
 
+#imprint hr {
+    width: 120em;
+}
+
 #imprint em {
     display: block;
     padding-bottom: 5px;
